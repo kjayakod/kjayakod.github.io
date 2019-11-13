@@ -1,12 +1,43 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Page Title and Page Name </title>
-</head>
-<body>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+  <a href="Education.htm">Education</a>
+  <a href="Experience.htm">Experience</a>
+  <a href="Hobbies.htm">Hobbies</a>
+  </div>
+  <!-- Use any element to open the sidenav -->
+  <span class="spanbar" onclick="openNav()">☰</span>
 
-<h1>My First Heading is always beautiful</h1>
-<p>My first paragraph. This is just a trial for github. i am making some changes. </p>
-<p> Another paragraph added to check on github.</p>
+  <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+ 
+  <div class="header-text">Priyanka Jayakody</div>
+    <img src="Resources/Landscape.jpg" alt="Water fall">
+    
+  <div class="text-element1">
+      <h2>At a glance...</h2>
+      <ul>
+          <li>Advanced working knowledge of Geographic Information System (GIS) and its applications.</li>
+          <li>Highly experienced in GIS Database Management (ESRI/ ArcGIS), Digital Mapping, Spatial Analysis and Modeling, and Remote Sensing.</li>
+          <li>Experience in sub-catchment delineation, soil sampling (planning, sampling, and laboratory analysis), utility mapping and editing, model builder</li>
+          <li>Hard-worker, self-reliant and motivated with strong interpersonal, technical, and leadership skills.</li>
+          <li>Ability to work independently and productively as a part of a team in a multi-task environment.</li>
+          <li>Basic Knowledge of AutoCAD.</li>
+      </ul>
+  </div>
+  
+  <div class="footer">
+    <a href="mailto:kpriyanka.jayakody@gmail.com">Contact Me</a>
+    <a href="Resources/Priyanka_Jayakody.pdf">Resume sample</a>
+    <a href="https://www.w3schools.com/">Learn HTML</a>
+    <p>Created by Priyanka Jayakody</p>
+  </div>
+  <script>
+       function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+       }
+
+       function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+       }
+</script>
 </body>
 </html>
