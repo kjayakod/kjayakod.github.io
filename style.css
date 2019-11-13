@@ -1,0 +1,188 @@
+/* Define and import custom fonts for header and body text */
+/* Font file is located in the resources folder and is in .ttf format */
+@font-face {
+  font-family: 'header-text';
+  src: url('Resources/header-text.ttf');
+}
+@font-face {
+  font-family: 'standard-text';
+  src: url('Resources/Lato-Regular.ttf');
+}
+/* Create standard style and format for bulleted lists in the scope of website theme */
+ul {
+    list-style-type: circle;
+}
+ul li {
+    padding: 10px 0px;
+}
+/* Create basis for website theme with background and establish standard size */
+body {
+  background-color: #c9af98;
+  font-size: 100%;
+}
+/* Creates standard element for page heading*/
+.header-text {
+  font-family: header-text;
+  color: #3a4660;
+  font-size: 6em;
+  text-align: center;
+  
+}
+/* Creates class for page subtitle text */
+.sub-text {
+    color: #7f4707;
+    text-align: center;
+    font-family: standard-text;
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+
+/* Formats the menu-sidebar icon */
+.spanbar {
+    color: #845007;
+    font-size: 2em;
+    font-weight: bold;
+    float: left;
+}
+ /* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #3a4660;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ed8a63;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+} 
+/* Defines standard body text element */
+.text-element1 {
+   background-color: #3a4660;
+   color: #ed8a63;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 95%;
+   padding: 2em;
+   font-family: standard-text;
+   text-align: left;
+   font-size: 1.25em;
+   margin-bottom: 4em;
+}
+/*
+.text-element1 img {
+    align-content: left;
+}*/
+.text-element1 b {
+        color: white;
+}
+.text-element1 h2 {
+    font-weight: normal;
+}
+/* Creates a standard image element in theme */
+img {
+    display: block;
+    width: 20em;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0.25em solid #3a4660;
+    padding: 0.25em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    }
+/* Foundation for footer element/background box */
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #3a4660;
+   color: white;
+   text-align: center;
+   font-size: 1em;
+}
+/* Defines link element in footer */
+.footer a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: inherit;
+  font-family: standard-text;
+  text-decoration: underline;
+}
+.footer a:hover {
+  background: white;
+  color: #ed8a63;
+}
+/* Defines standard p tag element in footer */
+.footer p {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 0em 16px;
+  text-decoration: none;
+  font-size: inherit;
+  font-family: standard-text;
+}
+
+table {
+    font-family: standard-text;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom:6em;
+}
+
+td {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+    background-color: white;
+}
+th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+    background-color: #3a4660;
+    color: white;
+}
